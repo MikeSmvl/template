@@ -1,0 +1,38 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeSmvl/template.git"
+  },
+  "author": "Mikael Samvelian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikeSmvl/template/issues"
+  },
+  "homepage": "https://github.com/MikeSmvl/template#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.3"
+  }
+}
